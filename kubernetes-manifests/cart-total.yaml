@@ -37,7 +37,8 @@ spec:
     spec:
       volumes:
       - name: acmefit-cart-data
-        emptyDir: {}
+        persistentVolumeClaim:
+          claimName: cart-total-data
       containers:
       - image: gcr.io/vmwarecloudadvocacy/acmeshop-cart:latest
         imagePullPolicy: "Always"

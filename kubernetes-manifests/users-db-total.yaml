@@ -59,10 +59,8 @@ spec:
               name: mongo-initdb
       volumes:
         - name: mongodata
-          emptyDir: {}
+          persistentVolumeClaim:
+            claimName: mongodata-users
         - name: mongo-initdb
           configMap:
             name: users-initdb-config
-#        - name: mongodata
-#          persistentVolumeClaim:
-#            claimName: mongodata
