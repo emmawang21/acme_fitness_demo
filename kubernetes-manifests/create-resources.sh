@@ -1,6 +1,6 @@
 set -x
 ACME_SECRET=rubrik
-ACME_NAMESPACE=acfit
+ACME_NAMESPACE=acme-fitness
 kubectl create ns ${ACME_NAMESPACE}
 kubectl -n ${ACME_NAMESPACE} create secret generic cart-redis-pass --from-literal=password=${ACME_SECRET}
 # Create PVC
