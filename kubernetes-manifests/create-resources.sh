@@ -1,6 +1,6 @@
 set -x
 ACME_SECRET=rubrik
-ACME_NAMESPACE=acme-fitness
+ACME_NAMESPACE=acfit
 kubectl create ns ${ACME_NAMESPACE}
 kubectl -n ${ACME_NAMESPACE} create secret generic cart-redis-pass --from-literal=password=${ACME_SECRET}
 # Create PVC
@@ -29,4 +29,4 @@ kubectl -n ${ACME_NAMESPACE} apply -f users-total.yaml
 kubectl -n ${ACME_NAMESPACE} apply -f frontend-total.yaml
 kubectl -n ${ACME_NAMESPACE} get services -l service=frontend
 
-kubectl -n ${ACME_NAMESPACE} apply -f point-of-sales-total-svc.yaml
+kubectl -n ${ACME_NAMESPACE} apply -f point-of-sales-total.yaml

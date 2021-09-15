@@ -2,11 +2,9 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: postgress-order-db
-  namespace: acmefitness
 spec:
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
       storage: 5Gi
-  storageClassName: standard 
