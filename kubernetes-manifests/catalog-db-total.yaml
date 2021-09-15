@@ -58,11 +58,9 @@ spec:
             - mountPath: /docker-entrypoint-initdb.d
               name: mongo-initdb
       volumes:
-        - name: mongodata
-          emptyDir: {}
         - name: mongo-initdb
           configMap:
             name: catalog-initdb-config
-#        - name: mongodata
-#          persistentVolumeClaim:
-#            claimName: mongodata
+        - name: mongodata
+          persistentVolumeClaim:
+            claimName: mongodata-catalog

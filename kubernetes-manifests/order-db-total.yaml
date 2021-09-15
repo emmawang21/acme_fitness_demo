@@ -66,4 +66,5 @@ spec:
           name: postgredb
       volumes:
       - name: postgredb
-        emptyDir: {}
+        persistentVolumeClaim:
+          claimName: postgress-order-db 
