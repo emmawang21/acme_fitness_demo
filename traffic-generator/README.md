@@ -10,7 +10,6 @@
 
 ### Steps
 
-# We could skip this step1 and just install anything needed when installing locust.
 1. pip3 install -r requirements.txt
 
 2. locust --host=http://{IP ADDRESS}:{PORT}, where IP_ADDRESS and PORT are the address on which the ACME SHOP App is running. 

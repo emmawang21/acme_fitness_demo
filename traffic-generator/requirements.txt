@@ -7,7 +7,7 @@ greenlet
 idna==2.8
 itsdangerous==2.0
 Jinja2==3.0
-locustio
+locustio==1.0.b1
 MarkupSafe
 msgpack
 pyzmq
