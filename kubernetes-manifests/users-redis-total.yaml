@@ -59,7 +59,8 @@ spec:
 #              name: redis-config
       volumes:
         - name: users-redis-data
-          emptyDir: {}
+          persistentVolumeClaim:
+            claimName: redisdata-user
 #        - name: redis-config
 #          configMap:
 #            name: redis-config

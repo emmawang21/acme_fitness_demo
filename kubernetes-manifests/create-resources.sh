@@ -7,6 +7,7 @@ kubectl -n ${ACME_NAMESPACE} create secret generic cart-redis-pass --from-litera
 kubectl -n ${ACME_NAMESPACE} apply -f mongodata_catalog.yaml
 kubectl -n ${ACME_NAMESPACE} apply -f mongodata_users.yaml
 kubectl -n ${ACME_NAMESPACE} apply -f redisdata-cart.yaml
+kubectl -n ${ACME_NAMESPACE} apply -f redisdata-user.yaml
 kubectl -n ${ACME_NAMESPACE} apply -f cart-total-data.yaml
 kubectl -n ${ACME_NAMESPACE} apply -f order-db-postgress.yaml
 
