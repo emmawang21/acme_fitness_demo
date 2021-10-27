@@ -13,6 +13,7 @@ spec:
   selector:
     app: acmefit
     service: catalog-db
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: Deployment
