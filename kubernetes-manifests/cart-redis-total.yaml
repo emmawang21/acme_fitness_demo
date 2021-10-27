@@ -12,6 +12,7 @@ spec:
   selector:
     app: acmefit
     service: cart-redis
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: Deployment
