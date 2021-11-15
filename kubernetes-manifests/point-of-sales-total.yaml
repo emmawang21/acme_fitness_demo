@@ -11,7 +11,7 @@ spec:
       protocol: TCP
       port: 7777
       targetPort: 7777
-      nodePort: 30431
+#      nodePort: 30431
   selector:
     app: acmefit
     service: pos
